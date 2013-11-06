@@ -1,0 +1,8 @@
+﻿input, textarea, select, .uneditable-input { height: inherit; line-height: inherit; width: 100%;}
+#volume-bar { width: 200px; float: right; height: 15px; border-radius: 0px; display: inline-block; margin: 8px 20px 0px 20px;}
+#volume-bar .bar { border-radius: 0px; }
+.time {float: right;}
+.controls{line-height: 30px;}
+.jp-progress.progress{height: 10px;}
+.declined-row{background-color: #FF9999;}
+.accepted-row{background-color: lightgreen;}

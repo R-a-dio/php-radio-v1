@@ -1,0 +1,63 @@
+html {
+	background: url('hiroto2.jpg') no-repeat;
+	background-size: cover;
+}
+body {
+	background: none;
+}
+#intro img {
+	height: 0;
+}
+#intro {
+	background: url('/res/img/logotitle_2b.png') center no-repeat;
+	height: 108px;
+}
+#logo-image-div {
+	background-image: url('/res/img/logo_image_small_b.png');
+}
+#thatbox,
+#thatbox h2 {
+	color: #fff;
+}
+
+.djmedia {
+	background: #fff;
+}
+
+#last-played * {
+	border: none;
+}
+#last-played thead th {
+	color: #fff;
+}
+#last-played tbody th {
+	color: #fff;
+}
+#last-played tbody td {
+	background: #fff;
+}
+#last-played tr:first-child td {
+	border-radius: 8px 8px 0 0;
+}
+#last-played tr:last-child td {
+	border-radius: 0 0 8px 8px;
+}
+
+#thread {
+	background: #000;
+	color: #fff;
+	smargin: -1em 0 -1em 0;
+	spadding: 0 0 .5em 0;
+	padding: .5em 0;
+	margin: 1em 0;
+}
+#thread a {
+	color: #9cf;
+}
+.content-top+.row+.seperator *,
+#thread+.seperator *
+{
+	sbackground: #000;
+	sborder: none;
+	display: none;
+}

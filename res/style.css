@@ -1,0 +1,337 @@
+body {
+	background-color: #526a83;
+	font-family: verdana, arial, sans-serif;
+	font-size: 13px;
+	color:#EEE;	
+	margin:50px 0px;
+	padding:0px;
+	text-align:center;
+}
+
+h1 {
+font-family: georgia, serif;
+font-size: 15px;
+padding:0;
+margin:0;
+}
+
+h2{
+font-family: verdana, sans-serif;
+font-style:italic;
+font-size: 12px;
+padding:0;
+margin:0;
+}
+
+table{
+	font-family: verdana, arial, sans-serif;
+	font-size: 13px;
+}
+
+#mainbox{
+width: 800px;
+margin:0px auto;
+padding-bottom: 40px;
+text-align:left;
+}
+
+#navbox{
+border: 1px solid #80addb;
+float:left;
+width:100%;
+padding:0;
+background-color:#04083b;
+}
+
+#contentbox{
+margin-top:10px;
+border: 1px solid #80addb;
+background-color:#04083b;
+float:left;
+width:780px;
+padding:10px;
+}
+
+#upper{
+float:left;
+width:100%;
+}
+
+#lower{
+float:left;
+width:100%;
+border-top: 1px solid #80addb;
+padding-top:5px;
+margin-top:5px;
+}
+
+.leftalign{
+float:left;
+width:50%;
+}
+
+.rightalign{
+float:right;
+width:50%;
+}
+
+#djimagebox{
+height:160px;
+width:150px;
+float:left;
+text-align:center;
+}
+
+#djimagebox img{
+margin-top:auto;
+margin-bottom:auto;
+position:relative;
+top:0px;
+}
+
+#streamstatusbox{
+float:left;
+margin-left:10px;
+padding-top:20px;
+width:65%;
+}
+
+.curplaying {
+width:99%;
+background-color:#a1bddb;
+color:#111;
+text-align:center;
+padding:2px;
+margin:3px;
+}
+
+#introbox{
+float:left;
+margin-left:10px;
+padding-top:6px;
+width:90%;
+}
+
+#introbox a{
+color:#444;
+}
+#introbox a:hover{
+color:#000;
+}
+
+table.alttbl{
+border:0;
+color:#111;
+table-layout:fixed;
+}
+table.alttbl tr{
+margin:0;
+padding:0;
+}
+
+table.alttbl td {
+padding:3px;
+background-color:#a1bddb;
+font-size: 13px;
+word-wrap:break-word;
+}
+
+table.alttbl tr:nth-child(odd) td {
+background-color:#cad2db;
+}
+/*
+
+table.alttbl tr.even td{
+padding:3px;
+background-color:#a1bddb;
+font-size: 13px;
+word-wrap:break-word;
+}
+table.alttbl tr.odd td{
+padding:3px;
+background-color:#cad2db;
+font-size: 13px;
+word-wrap:break-word;
+}
+
+*/
+
+#newscontainer{
+float:left;
+width:100%;
+margin-top:10px;
+}
+
+.newsitem h1{
+margin-bottom:3px;
+}
+.newsitem h1 a {
+color:#EEE;
+text-decoration:none;
+}
+.newsitem h1 a:hover {
+color:#DDE;
+text-decoration:underline;
+}
+.newsitem h2{
+margin-bottom:5px;
+margin-left:3px;
+color:#4d5180;
+}
+
+.newsitem img{
+float:left;
+margin-right:5px;
+}
+
+.newsitem span{
+margin:0;
+}
+
+.newsitem{
+padding:5px;
+}
+
+.newsitem_left{
+width: 31%;
+float: left;
+border: 1px solid #80addb;
+background-color:#04083b;
+}
+
+.newsitem_mid{
+width:31%;
+float: left;
+margin-left: 10px;
+border: 1px solid #80addb;
+background-color:#04083b;
+}
+
+.newsitem_right{
+width:31%;
+float: left;
+margin-left: 10px;
+border: 1px solid #80addb;
+background-color:#04083b;
+}
+
+#curthreadbox {
+margin-top:10px;
+border: 1px solid #80addb;
+background-color:#04083b;
+float:left;
+width:780px;
+padding:10px;
+}
+#curthreadbox h1 {
+color: #66cc00;
+display: inline;
+}
+#curthreadbox a {
+color: #dddddd;
+text-decoration:none;
+}
+#curthreadbox a:hover {
+text-decoration:underline;
+}
+
+/*****************************************************/
+
+#searchbox{
+margin-top:15px;
+}
+
+.requestbut form{
+margin:0;
+padding:0;
+}
+.requestbut input{
+margin:0;
+}
+.requestbut{
+padding:0;
+text-align:center;
+}
+
+#searchnav {
+float:right;
+margin-top:10px;
+margin-right:5px;
+}
+#searchnav span{
+border:1px solid #80addb;
+margin-left:3px;
+background-color:#464c93;
+padding:2px;
+}
+#searchnav span.cur {
+border:1px solid #80addb;
+margin-left:3px;
+background-color:#04083b;
+}
+#searchnav a{
+color:#95c9ff;
+text-decoration:none;
+}
+
+/****************************************************/
+
+.cmnt div.cmnt_head {
+
+}
+.cmnt div.cmnt_text {
+padding-left:5px;
+}
+
+.cmnt span.cmnt_name {
+font-weight:bold;
+}
+.cmnt span.cmnt_time {
+font-style:italic;
+color:#7a7a80;
+}
+.cmnt a {
+color:#66E;
+}
+
+div.cmnt {
+margin-bottom:5px;
+color:#111;
+background-color:#D6DAF0;
+float: left;
+width: 95%;
+margin-left: 10px;
+padding:3px;
+display:block;
+}
+
+
+div.cmnt_gt {
+color:#DDD;
+float: left;
+clear: both;
+}
+
+/*
+.commentname {
+font-weight:bold;
+}
+.commenttime {
+font-style:italic;
+color:#7a7a80;
+}
+.commenttable {
+margin-bottom:5px;
+}
+.commenttable td {
+color:#111;
+word-break:break-all;
+}
+.commenttable a{
+color:#66E;
+}
+.commenttable td.gt {
+color:#DDD;
+padding-right:8px;
+word-break:keep-all;
+}*/

@@ -1,0 +1,16 @@
+html {
+	background: #f5f5f5 url('/res/img/kengeki_ice.jpg');
+}
+
+.page {
+	background: rgba(255,255,255,0.5);
+	background: -moz-linear-gradient(top,rgba(255,255,255,0.9),rgba(255,255,255,0.5) 128px);
+	background: -webkit-linear-gradient(top,rgba(255,255,255,0.9),rgba(255,255,255,0.5) 128px);
+	box-shadow: 0 0 16px rgba(0,0,0,0.5);
+	border-radius: 16px;
+	padding: .8em 2em;
+}
+
+body {
+	background: url('/res/img/fadegrid3.png') repeat-x;
+}

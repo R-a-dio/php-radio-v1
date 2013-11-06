@@ -1,0 +1,426 @@
+<html>​​​​​<head>
+	<title>R/a/dio</title>
+	<meta charset="utf-8">
+	<meta name="description" content="We cater to all of your Anime/Japan-related music tastes. Just point your favorite music player at our stream link.">
+	<meta name="keywords" content="japan,music,anime,radio,r/a/dio,r-a-dio,stream,anison,日本,アニソン">
+	<link href="/favicon.ico" type="image/vnd.microsoft.icon" rel="shortcut icon">
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/jquery.jplayer.min.js"></script>
+	<script>window.swfpath = "/js/Jplayer.swf";</script>
+	<script src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+	<script src="/js/bootstrap-plugins.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/jquery.form.js"></script>
+	<script src="/js/bootstrap-typeahead.js"></script>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/index.css">
+
+<script>var djmode=18;</script>	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis:200">
+	<link rel="stylesheet" href="/css/hanyuu.css">	
+</head>
+<body>
+	<div style="width: 0px; height: 0px;" id="player"><img style="width: 0px; height: 0px; display: none;" id="jp_poster_0"></div>
+	<div class="topbar">
+		<div class="topbar-inner">
+			<div class="container">
+				<h3><a href="#">R/a/dio</a></h3>
+				<ul class="nav">
+					<li class="go active" id="p-home">
+						<a href="/">Home</a>
+					</li>
+					<li class="go" id="p-news">
+						<a href="/news/">News</a>
+					</li>
+					<li class="go" id="p-lastplayed">
+						<a href="/lastplayed/">Last Played</a>
+					</li>
+					<li class="go" id="p-queue">
+						<a href="/queue/">Queue</a>
+					</li>
+					<li class="go" id="p-favorites">
+						<a href="/favorites/">Favorites</a>
+					</li>
+					<li class="go" id="p-submit">
+						<a href="/submit/">Submit track</a>
+					</li>
+					<li class="go" id="p-staff">
+						<a href="/staff/">Staff</a>
+					</li>
+					<li class="go" id="p-irc">
+						<a href="/irc/">IRC</a>
+					</li>
+					<li class="go" id="p-stats">
+						<a href="/stats/">Stats</a>
+					</li>
+					<li class="go" id="p-search">
+						<a href="/search/">Request</a>
+					</li>
+				</ul>
+				<form id="search" class="pull-right" action="/search/">
+					<input class="search" name="query" autocomplete="off" placeholder="Search library" type="text">
+				</form>
+			</div>
+<!--<div class="alert-message danger" style="text-align: center; z-index: 10;">
+        <strong>Our new server had a bit of a boo-boo, since the entire OVH datacenter is under heavy load. This very webserver is included, but it's not streaming.</strong>
+</div>-->
+
+		</div>
+	</div>
+<noscript class="javascript">
+	<div class="container">
+		<div class="alert-message danger fade in error-message">
+			<strong>You should turn on javascript to get the full functionality of this web page.</strong>
+		</div>
+	</div>
+</noscript>
+
+<div class="container error-div" style="display: none;">
+	<div class="row">
+		<div class="span12 offset2">
+		</div>
+	</div>
+</div><div style="display: block;" class="container page" id="page-p-home">			
+			
+			<div class="row content-top">
+				
+				<div class="span3" id="logo-image-div">
+					
+					<!--<img id="logo-image" src="/res/img/logo_image_small.png" alt="Radio logo" />-->
+				</div>
+				<div class="span10">
+					<div class="row info" id="thatbox">
+						<div class="span10 row" id="introcontainer">
+							<div id="intro" class="span5">
+								<img src="/res/img/logotitle_2.png" alt="Radio">
+							</div>
+							<div id="soundmanager-debug"></div>
+							<div id="streamconnect" class="span4">
+								
+								<div class="span4 browplay-jp">
+									<button rel="twipsy" class="fill btn info jp-play" disabled="disabled" data-original-title="Play the stream directly in your browser. Uses HTML5 if possible, else a Flash fallback.">Play in browser</button>
+									<div class="fill btn info active jp-pause" style="display: none; width: 90%; text-align: center; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);"><div class="progress jp-volume-bar success" style="height: 10px; margin: 0px;"><div class="bar jp-volume-bar-value" style="width: 80%;"></div></div>Stop</div>
+								</div>
+								<a href="#" id="expand-panel">More stream options</a>
+
+							</div>
+						</div>
+						<div id="streamconnect-panel" class="span10 row">
+							<div class="span4" id="panel-links">
+								<h4>Stream links</h4>
+								<a rel="twipsy" class="fill btn info" href="http://stream.r-a-d.io:1130/main.mp3.m3u" data-original-title="Downloadable playlist file that can be opened with most media players.">Playlist File (.m3u)</a><br>
+								<a class="fill btn info" href="http://r-a-d.io/listen.pls" data-original-title="Downloadable playlist file that can be opened with most media players, in case the m3u doesn't work.">Playlist File (.pls)</a><br>
+								<a rel="twipsy" class="fill btn info" href="http://stream.r-a-d.io:1130/main.mp3" data-original-title="Direct link to the stream. Don't open this in your browser; copy the link!">Direct Stream Link</a>
+							</div>
+							<div class="span4" id="panel-info">
+								<p>You can also listen to r/a/dio in most music players. All you have to do is copy one of the links to the left into your player and you're good to go!</p>
+							</div>
+							
+							
+						</div>
+						
+						
+						
+						<!--<div id="links" class="row">
+							<div class="span4" style="margin-left: 70px;">
+								<a rel="twipsy" class="fill btn info" href="http://stream.r-a-d.io:1130/main.mp3.m3u" data-original-title="Downloadable playlist file that can be opened with most media players.">Playlist File (.m3u)</a>
+							</div>
+							<div class="span4">
+								<a class="fill btn info" href="http://r-a-d.io/listen.pls" data-original-title="Downloadable playlist file that can be opened with most media players, in case the m3u doesn't work.">Playlist File (.pls)</a>
+							</div>
+							<div class="span4 browplay-jp">
+								<button rel="twipsy" class="fill btn info jp-play" disabled="disabled" data-original-title="Play the stream directly in your browser. Uses HTML5 if possible, else a Flash fallback.">Play in browser</button>
+								<div class="fill btn info active jp-pause" style="display: none; width: 90%; text-align: center; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);"><div class="progress jp-volume-bar success" style="height: 10px; margin: 0px;"><div class="bar jp-volume-bar-value"></div></div>Stop</div>
+							</div>
+							<div class="span4 browplay-vis">
+								<a rel="twipsy" id="edplay" class="fill btn info" href="#" data-original-title="Play the stream directly in your browser. ed version: now with 100% more eyecandy">(please wait)</a>
+							</div>
+						</div>-->
+						<div id="main-streamdata" class="row">
+							<div id="nowplaying" class="span10">
+								<div class="nowplaying">
+									<h2>EXIT TRANCE - Genesis of Aquarion (trance Version) with filler text</h2>
+								</div>
+							</div>
+							<div id="progress" class="span10">
+								<div class="progress info">
+									<div class="bar" style="width: 8.55263%;"></div>
+								</div>
+							</div>
+							<div id="stream_info" class="span10">
+								<div class="span2 block-inline listeners">
+									Listeners: <span class="value">156</span>
+								</div>
+								<div class="span4 block-inline"><span id="current_pos">00:19</span>/<span id="current_len">03:48</span></div>
+								<div class="span2 block-inline bitrate">
+									<!-- Bitrate: <span class="value">192</span>kbps -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span3">
+					<ul class="media-grid">
+						<li>
+							<span class="djmedia" rel="twipsy" data-original-title="The AFK streamer, still in development while being in use. Don't blame her when something goes wrong!">
+								<img class="thumbnail djimg" src="/res/img/dj/jyytt.png" border="0" height="150" width="150">
+								<span id="dj">Hanyuu-sama</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div id="last-played-container" class="span8">
+					<table class="zebra-striped" id="last-played">
+						<thead>
+							<tr>
+								<th colspan="2">Last Played</th>
+							</tr>
+						</thead>
+						<tbody><tr><th>01:04:26</th><td>tomatomerde - Tip Taps Tip/Grand Theft Ecstasy (Dance Nirvash! Mashup) with an extra long title</td></tr><tr><th>00:58:21</th><td>ALI PROJECT - Katana to Saya</td></tr><tr><th>00:53:43</th><td>She - Chiptek</td></tr><tr><th>00:50:39</th><td>Hatsune Miku - The Disappearance of Hatsune Miku</td></tr><tr><th>00:45:54</th><td>Rie Yamaguchi - Kizuite Zombie-sama, Watashi wa Classmate Desu</td></tr></tbody>
+					</table>
+				</div>
+				
+				<div id="queue-container" class="span8">
+					<table class="zebra-striped" id="queue">
+						<thead>
+							<tr>
+								<th colspan="2">Queue</th>
+							</tr>
+						</thead>
+						<tbody><tr><th>01:08:13</th><td><b>Otsubo Yuka - Mirakuru Yurukuru 1・2・3</b></td></tr><tr><th>01:12:02</th><td><b>Susumu Hirasawa - Forces</b></td></tr><tr><th>01:16:06</th><td><b>Kaori Sadohara - Annaka no pyon! pyon! e!!</b></td></tr><tr><th>01:19:35</th><td><b>Gomu - Okkusenman</b></td></tr><tr><th>01:22:24</th><td><b>Dohatsuten - Ginga Densetsu Weed</b></td></tr></tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- ed was here on a mission from kuma-kun -->
+			<div class="row seperator">
+				<div class="seperator span16">
+				</div>
+			</div>
+			<div id="thread" style="position:relative;top:-.6em;text-align:center">From time to time we have a thread up on /a/. This however, is no such time.</div>
+			<!-- end of (ed)its -->
+
+			<div class="row seperator">
+				<div class="seperator span16">
+				</div>
+			</div>
+			<div class="row news">
+				<div class="span-one-third"><h5><a alt="89" href="#/news/89">Concerning Frid/a/ys from now on</a></h5><div class="border"><h6>Fri 14 Sep, 08:28</h6><span class="newstext">So after tinkering around a little bit this week I've sadly had to accept the fact that I can no longer do Frid/a/y nights here at R/a/dio. I believe Eku will be taking over as the weekly Frid/a/y DJ. And I think Egg said something about how sundays are shit and he's sticking with tuesdays.
+<br>
+<br>I'm sorry things couldn't work out for me to continue DJing the way I love so very much, but things here are r/a/dio will go on with our weeb music just as they always have. 
+<br>
+<br>I'll still be around, and assuming there's still space for me I'll probably DJ again when I come home sometime next year. 
+<br>
+<br>These past almost 2 years have been the best I could ever ask for, you guys have been my very best friends I could ever have.
+<br>
+<br>~Kuma
+<br>
+<br></span></div></div><div class="span-one-third"><h5><a alt="88" href="#/news/88">Downtime</a></h5><div class="border"><h6>Mon 10 Sep, 00:26</h6><span class="newstext"><strong>Update:</strong> We have feature-locked the AFKStreamer and the website. We wont be adding anything new until all known bugs are fixed.
+<br>
+<br>When we say our system is still in development, we mean it; one of the relays went down and the streamer didn't have any handling for this. Whoopsie.
+<br>
+<br>Back up and running with a temporary fix while we commit changes. The stream and website might go down for a bit when we update.
+<br>
+<br><strong>PS:</strong> I am working on a fix for the news posts disappearing when the stream goes down. <i>bear</i> with me.
+<br>
+<br>~Hiroto</span></div></div><div class="span-one-third"><h5><a alt="87" href="#/news/87">Site Traffic</a></h5><div class="border"><h6>Wed 5 Sep, 01:54</h6><span class="newstext">I should probably have mentioned this more than 2 months ago, but we actually hit 1 million (confirmed) hits to the site. This number is probably lower than it should be due to adblock (since i know over 80% of you use adblock when i did a little test a few months back involving google ads hidden out of sight), but I'm still projecting hitting 2 million hits by the end of the year, with ~1 million visits.
+<br>
+<br>In addition, a number of you might have noticed that the stream cuts out, or goes into fallback mode from time to time; while we try to keep r/a/dio up 24/7 with no interrupts, we don't have a perfectly stable setup. Our AFK streamer is still in development, after all, and while we do test, it's not until we've been streaming for about 10 hours before something unexpected happens and everything breaks. If you look on the stats page and notice listeners have suddenly dropped to 0, it's usually because the central server restarted.
+<br>~Hiroto</span></div></div>
+			</div></div><!-- Piwik --> <script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://r-a-d.io/piwik/" : "http://r-a-d.io/piwik/");document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));</script><script src="http://r-a-d.io/piwik/piwik.js" type="text/javascript"></script><script type="text/javascript">try {var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);/*piwikTracker.trackPageView();*/piwikTracker.enableLinkTracking();} catch( err ) {}</script><noscript><p><img src="http://r-a-d.io/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript><!-- End Piwik Tracking Code -->
+<div id="info-footer" style="text-align: center; font-size: 80%;"><a href="http://code.google.com/p/radio-backend-hanyuu/">Code Repository</a>
+</div>
+<a href="/ed/dong" id="tt">TT</a>
+<ul class="typeahead dropdown-menu"></ul>
+
+
+
+
+
+
+<script>
+var ed8stop = false;
+var ed8can, ed8ctx;
+var ed8body, ed8div;
+var ed8im = [];
+var ed8ip = ['base','base2','carpet','wc1','wc2','srbd','srb','bit1','bit2','bit3','bit4'];
+var ed8killer = 1;
+function ed8kill()
+{
+	ed8killer -= 0.1;
+	if (ed8killer <= 0)
+	{
+		ed8body.removeChild(ed8div);
+		return;
+	}
+	ed8div.style.opacity = ed8killer;
+	setTimeout('ed8kill();', 20);
+}
+function ed8init()
+{
+	ed8body = document.getElementsByTagName('body')[0];
+	ed8div = document.createElement('div');
+	ed8div.setAttribute('id', 'ed8div');
+	ed8div.onclick = function(e) {
+		ed8stop = true;
+		ed8kill();
+	};
+	ed8body.appendChild(ed8div);
+	var ed8stl = window.getComputedStyle(ed8div, null);
+	var ed8dw = parseInt(ed8stl.getPropertyValue('width'));
+	var ed8dh = parseInt(ed8stl.getPropertyValue('height'));
+	ed8can = document.createElement('canvas');
+	ed8can.setAttribute('id', 'ed8can');
+	ed8can.setAttribute('width', '768');
+	ed8can.setAttribute('height', '720');
+	ed8can.style.left = ((ed8dw-768)/2)+'px';
+	ed8can.style.top = ((ed8dh-720)/2)+'px';
+	ed8div.appendChild(ed8can);
+	ed8ctx = ed8can.getContext('2d');
+	for (var a = 0; a < ed8ip.length; a++)
+	{
+		ed8im[a] = new Image();
+		ed8im[a].onLoad = ed8loader();
+		//ed8im[a].src = '/ed/rad8/'+ed8ip[a]+'.png';
+		ed8im[a].src = ed8ip[a]+'.png';
+	}
+}
+var ed8remain = ed8ip.length;
+function ed8loader()
+{
+	ed8remain--;
+	if (ed8remain <= 0)
+	{
+		ed8sc0();
+	}
+}
+var ed8sc0n = 6;
+function ed8sc0()
+{
+	if (ed8sc0n-- < 0)
+	{
+		setTimeout('ed8sc1();', 100);
+		return;
+	}
+	ed8ctx.drawImage(ed8im[0], 0, 0);
+	ed8ctx.drawImage(ed8im[2], 0, 0);
+	setTimeout('ed8sc0();', 100);
+}
+var ed8sc1y = 576;
+function ed8sc1()
+{
+	if (ed8stop) return;
+	ed8sc1y-=5;
+	if (ed8sc1y < 0)
+	{
+		setTimeout('ed8sc2();', 300);
+		return;
+	}
+	ed8ctx.drawImage(ed8im[0], 0, 0);
+	ed8ctx.drawImage(ed8im[2], 0, ed8sc1y-576);
+	setTimeout('ed8sc1();', 10);
+}
+var ed8sc2x = 768;
+function ed8sc2()
+{
+	if (ed8stop) return;
+//	ed8sc3x +=
+//		ed8sc3x < 400 ? 24 :
+//		ed8sc3x < 460 ? 3 : 18;
+	ed8sc2x -=
+		ed8sc2x > 200 ? ed8sc2x/16 :
+		ed8sc2x > 170 ? 2 : 1;
+	if (ed8sc2x < 130)
+	{
+		ed8sc3();
+		return;
+	}
+	ed8ctx.drawImage(ed8im[0], 0, 0);
+	ed8ctx.drawImage(ed8im[3], ed8sc2x, 280);
+	ed8ctx.drawImage(ed8im[4], 568-ed8sc2x, 340);
+	setTimeout('ed8sc2();', 20);
+}
+var ed8sc3v = 0;
+function ed8sc3()
+{
+	if (ed8stop) return;
+	ed8sc3v += 0.1;
+	if (ed8sc3v >= 0.9)
+	{
+		ed8ctx.globalAlpha = 1;
+		ed8sc4();
+		return;
+	}
+	ed8ctx.globalAlpha = ed8sc3v;
+	ed8ctx.drawImage(ed8im[0], 0, 0);
+	setTimeout('ed8sc3();', 50);
+}
+var ed8sc4y = -324;
+function ed8sc4()
+{
+	if (ed8stop) return;
+	ed8sc4y += 9;
+	if (ed8sc4y >= 96)
+	{
+		ed8sc5();
+		return;
+	}
+	ed8ctx.drawImage(ed8im[0], 0, 0);
+	ed8ctx.drawImage(ed8im[5], 138, ed8sc4y);
+	setTimeout('ed8sc4();', 10);
+}
+var ed8sc5n = 48; //34
+function ed8sc5()
+{
+	if (ed8stop) return;
+	if (ed8sc5n-- < 0)
+	{
+		ed8sc6();
+		return;
+	}
+	ed8ctx.drawImage(ed8im[0], 0, 0);
+	ed8ctx.drawImage(ed8im[5], 138, ed8sc4y +
+		((ed8sc5n%2==0) ? 6 : 0)
+	);
+	setTimeout('ed8sc5();', 10);
+}
+var ed8sc6v = 0;
+function ed8sc6()
+{
+	if (ed8stop) return;
+	ed8sc6v += 0.04;
+	if (ed8sc6v >= 0.5)
+	{
+		ed8ctx.globalAlpha = 1;
+		ed8ctx.drawImage(ed8im[1], 0, 0);
+		ed8sc7();
+		return;
+	}
+	ed8ctx.globalAlpha = ed8sc6v;
+	ed8ctx.drawImage(ed8im[1], 0, 0);
+	//ed8ctx.drawImage(ed8im[6], 138, 96);
+	ed8ctx.drawImage(ed8im[7], 336,312);
+	setTimeout('ed8sc6();', 50);
+}
+var ed8sc7v = 0;
+function ed8sc7()
+{
+	if (ed8stop) return;
+	ed8sc7v++;
+	// 5 5 5 10 10 5
+	var i = 7;
+	     if (ed8sc7v <  5) i = 7;
+	else if (ed8sc7v < 10) i = 8;
+	else if (ed8sc7v < 15) i = 9;
+	else if (ed8sc7v < 25) i = 10;
+	else if (ed8sc7v < 35) i = 9;
+	else if (ed8sc7v < 40) i = 8;
+	else ed8sc7v = 1;
+	ed8ctx.drawImage(ed8im[i], 336, 312);
+	ed8ctx.drawImage(ed8im[6], 138, 96);
+	setTimeout('ed8sc7();', 15);
+}
+ed8init();
+
+</script></body>​​​​​</html>

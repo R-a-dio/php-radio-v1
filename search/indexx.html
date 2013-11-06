@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title>r/a/dio</title>
+		<link rel="stylesheet" href="../res/style.css" type="text/css" />
+		<link rel="stylesheet" href="../res/nav.css" type="text/css" />
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<body>
+		<div id="mainbox">
+			<div id="navbox">
+				<ul id="nav">
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="">Music</a>
+						<ul>
+							<li><a href="/search">Search</a></li>
+							<li><a href="/queue">Queue</a></li>
+							<li><a href="/submittrack">Submit track</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/djs">DJs</a>
+					</li>
+					<li>
+						<a href="irc://irc.rizon.net/#r/a/dio">IRC</a>
+						<ul>
+							<li><a href="/webirc">WebIRC</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+			<div id="contentbox">
+				<div id="upper">
+					<h1>Search music database</h1>
+					<div style="padding-top:10px">You can only request a song every 30 minutes. Also, each specific song can only be requested every hour. If the "Request" button is greyed out, one of these is probably the reason. You can also only request songs if the AFK streamer is active; if a DJ is on, you need to go to the IRC.</div>
+					<form name="searchform" action="/search/" method="get">
+					<div id="searchbox">
+						Enter your search term:
+						<input type="text" name="search" value="" />
+						<input type="submit" value="Search" />
+					</div>
+					</form>
+				</div>
+				<div id="lower">
+					<table class="alttbl" cellspacing="1" cellpadding="0" border="0">
+						<tr class="even">
+							<td width="350px"><b>Artist - Track</b></td>
+							<td width="150px"><b>Last played</b></td>
+							<td width="150px"><b>Last requested</b></td>
+							<td><b>Request song</b></td>
+						</tr>
+						<tr class="odd">
+							<td>Nirgilis - Kiseki</td>
+							<td>Tue 2 Jun, 14:53</td>
+							<td>Tue 2 Jun, 14:45</td>
+							<td class="requestbut">
+								<form name="requestform" action="/request/" action="POST">
+								<input type="hidden" name="songid" value="263" />
+								<input type="submit" value="Request" />
+								</form>
+							</td>
+						</tr>
+						<tr class="even">
+							<td>Nirgilis - Kiseki</td>
+							<td>Tue 2 Jun, 14:53</td>
+							<td>Tue 2 Jun, 14:45</td>
+							<td class="requestbut">
+								<form name="requestform" action="/request/" action="POST">
+								<input type="hidden" name="songid" value="263" />
+								<input type="submit" value="Request" disabled="disabled" />
+								</form>
+							</td>
+						</tr>
+						<tr class="odd">
+							<td>Nirgilis - Kiseki</td>
+							<td>Tue 2 Jun, 14:53</td>
+							<td>Tue 2 Jun, 14:45</td>
+							<td class="requestbut">
+								<form name="requestform" action="/request/" action="POST">
+								<input type="hidden" name="songid" value="263" />
+								<input type="submit" value="Request" />
+								</form>
+							</td>
+						</tr>
+					</table>
+					<div id="searchnav">
+						<span class="cur">1</span>
+						<span><a href="/search/?search=kiseki&page=2">2</a></span>
+						<span><a href="/search/?search=kiseki&page=3">3</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

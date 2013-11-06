@@ -1,0 +1,21 @@
+body {
+	background: none;
+}
+html {
+	background: url('pp.jpg') no-repeat;
+	background-size: cover;
+}
+#last-played,
+#queue,
+.seperator,
+.news {
+	display: none;
+}
+#logo-image-div {
+	background: none;
+}
+* {
+	color: #7df !important;
+	font-weight: normal !important;
+	border: none !important;
+}

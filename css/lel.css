@@ -1,0 +1,453 @@
+html, body {
+	min-height: 100%;
+	background: none;
+}
+
+html {
+     background: url("/css/kilim/back.jpg") no-repeat fixed left center / cover  #FFFFFF;
+}
+
+canvas {
+     background: url('/css/happy-valentines.png') no-repeat fixed 95% 95%;
+}
+
+#info-footer {
+     display: none;
+}
+
+#page-p-home .djmedia {
+     border: medium none;
+}
+
+#page-p-home .content-top .span10 {
+     width: 540px;
+}
+
+#page-p-home .row:after {
+     clear: both;
+}
+
+#page-p-home .news {
+     display: none ! important;
+}
+
+#page-p-home .seperator {
+     display: none ! important;
+}
+
+#page-p-home #thread {
+     display: none ! important;
+}
+
+#page-p-home #last-played-container {
+     display: none ! important;
+}
+
+#page-p-home #queue-container {
+     display: none ! important;
+}
+
+#page-p-home .row:before, .row:after {
+     content: "";
+     display: table;
+}
+
+.row:not(.news) {
+     height: 130px;
+     margin-bottom: 1.5em;
+}
+
+#page-p-home .content-top {
+     background: none repeat scroll 0px 0px rgba(36, 36, 36, 0.7) ! important;
+     border-radius: 30px 30px 30px 30px ! important;
+     box-shadow: 0px 0px 3px 5px rgba(36, 36, 36, 0.7) ! important;
+     left: 50% ! important;
+     margin-left: -490px ! important;
+     margin-top: -115px ! important;
+     min-height: 230px ! important;
+     padding: 1.5em 0px 0px ! important;
+     position: absolute ! important;
+     top: 50% ! important;
+     width: 980px ! important;
+	 z-index: 5;
+}
+
+#page-p-home #stream_info {
+     bottom: 7.2em;
+     position: relative;
+}
+
+.page:not(#page-p-home) {
+     background: none repeat scroll 0px 0px rgba(36, 36, 36, 0.7) ! important;
+     border-radius: 30px 30px 30px 30px ! important;
+     border: medium none ! important;
+     box-shadow: 0px 0px 3px 5px rgba(36, 36, 36, 0.7) ! important;
+     padding: 1.3em 2.8em;
+     position: relative ! important;
+}
+
+#page-p-home #nowplaying h2, #dj {
+     color: #FFFFFF ! important;
+}
+
+#page-p-home #nowplaying h2 {
+     height: 68px;
+     overflow: hidden;
+}
+
+#page-p-home #nowplaying {
+     border: medium none ! important;
+     position: relative;
+     top: 1em;
+}
+
+#page-p-home #progress {
+     bottom: 4.7em;
+     position: relative;
+}
+
+#page-p-home #stream_info .block-inline {
+     color: #FFFFFF ! important;
+}
+
+#page-p-home #stream_info block-inline listeners {
+     color: #FFFFFF ! important;
+}
+
+#page-p-home .btn.info, .alert-message.info {
+     background: none repeat scroll 0px 0px rgba(44, 44, 44, 0.3) ! important;
+     border-radius: 2px 2px 2px 2px ! important;
+     border: 1px dashed #333333 ! important;
+     box-shadow: none;
+     color: #FFFFFF ! important;
+}
+
+#page-p-home #streamconnect a {
+     color: #FFFFFF ! important;
+}
+
+#streamconnect-panel {
+     background: none repeat scroll 0px 0px rgba(36, 36, 36, 0.7) ! important;
+     border-radius: 30px 30px 30px 30px ! important;
+     border: medium none;
+     box-shadow: 0px 0px 3px 5px rgba(36, 36, 36, 0.7) ! important;
+     display: none;
+     float: left;
+     height: 140px;
+     left: -18.8em;
+     margin-bottom: -100%;
+     opacity: 0;
+     padding: 5px;
+     position: relative;
+     top: -25.5em ! important;
+     width: 980px ! important;
+     z-index: 5;
+}
+
+#panel-links {
+     border: medium none;
+     margin-left: 26%;
+     margin-top: 2%;
+}
+
+#panel-links h4 {
+     color: #FFFFFF;
+     display: none;
+}
+
+body {
+     font-family: "Helvetica Neue",Arial,sans-serif ! important;
+}
+
+body {
+     color: #FFFFFF;
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     font-size: 13px;
+     font-weight: normal;
+     line-height: 18px;
+}
+
+body:not([id]) {
+     cursor: auto ! important;
+}
+
+#Div1 {
+     height: 100% ! important;
+     left: 11.5em;
+     top: 14em;
+     max-height: 110em ! important;
+     position: fixed;
+     width: 100%;
+}
+
+.snow {
+     height: 100%;
+     margin: -150px;
+     overflow: hidden;
+     width: 100%;
+}
+
+#page-p-news {
+     background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.6) ! important;
+     border-radius: 8px 8px 8px 8px ! important;
+     border: 0px dashed #333333 ! important;
+     color: #FFFFFF ! important;
+     padding: 0.8em 2em ! important;
+}
+
+#page-p-lastplayed {
+     background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.6) ! important;
+     border-radius: 8px 8px 8px 8px ! important;
+     border: 0px dashed #333333 ! important;
+     color: #FFFFFF ! important;
+     padding: 0.8em 2em ! important;
+}
+
+#page-p-lastplayed .zebra-striped tr:hover * {
+     background: none repeat scroll 0px 0px rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-lastplayed td {
+     border-top: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-lastplayed th {
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-lastplayed th a {
+     color: #FFFFFF ! important;
+}
+
+#page-p-queue {
+     background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.6) ! important;
+     border-radius: 8px 8px 8px 8px ! important;
+     border: 0px dashed #333333 ! important;
+     color: #FFFFFF ! important;
+     padding: 0.8em 2em ! important;
+}
+
+#page-p-queue .zebra-striped tr:hover * {
+     background: none repeat scroll 0px 0px rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-queue td {
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-queue tr th {
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-queue th a {
+     color: #FFFFFF ! important;
+}
+
+#page-p-staff {
+     background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.6) ! important;
+     border-radius: 8px 8px 8px 8px ! important;
+     border: 0px dashed #333333 ! important;
+     color: #FFFFFF ! important;
+     padding: 0.8em 2em ! important;
+}
+
+#page-p-staff .djname {
+     color: #FFFFFF ! important;
+}
+
+#page-p-favorites {
+     background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.6) ! important;
+     border-radius: 8px 8px 8px 8px ! important;
+     border: 0px dashed #333333 ! important;
+     color: #FFFFFF;
+     padding: 0.8em 2em ! important;
+}
+
+#page-p-favorites table td {
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-favorites table th {
+     background-color: rgba(36, 36, 36, 0.35) ! important;
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-favorites table td, tr:hover {
+     background-color: rgba(36, 36, 36, 0.15) ! important;
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-submit {
+     background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.6) ! important;
+     border-radius: 8px 8px 8px 8px ! important;
+     border: 0px dashed #333333 ! important;
+     color: #FFFFFF;
+     padding: 0.8em 2em ! important;
+}
+
+div#submit-form-main {
+     background: none repeat scroll 0px 0px transparent ! important;
+     border: medium none ! important;
+}
+
+div#submit-form-main hr {
+     border-bottom: 3px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-submit table tr {
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-submit label {
+     color: #FFFFFF ! important;
+}
+
+#page-p-submit table td {
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-submit table th {
+     background-color: rgba(36, 36, 36, 0.15) ! important;
+     border-left: 1px solid rgba(0, 0, 0, 0.1) ! important;
+     border-right: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-submit table td, tr:hover {
+     background-color: rgba(36, 36, 36, 0.15) ! important;
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-irc {
+     background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.6) ! important;
+     border-radius: 8px 8px 8px 8px ! important;
+     border: 0px dashed #333333 ! important;
+     color: #FFFFFF ! important;
+     padding: 0.8em 2em ! important;
+}
+
+#page-p-stats {
+     background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.6) ! important;
+     border-radius: 8px 8px 8px 8px ! important;
+     border: 0px dashed #333333 ! important;
+     color: #FFFFFF ! important;
+     padding: 0.8em 2em ! important;
+}
+
+#page-p-stats .seperator {
+     visibility: hidden ! important;
+}
+
+#page-p-stats table td {
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-stats table th {
+     background-color: rgba(36, 36, 36, 0.15) ! important;
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-stats table td, tr:hover {
+     background-color: rgba(36, 36, 36, 0.15) ! important;
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-search {
+     background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.6) ! important;
+     border-radius: 8px 8px 8px 8px ! important;
+     border: 0px dashed #333333 ! important;
+     color: #FFFFFF ! important;
+     padding: 0.8em 2em ! important;
+}
+
+#page-p-search .seperator {
+     visibility: hidden ! important;
+}
+
+#page-p-search table td {
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-search table th {
+     background-color: rgba(36, 36, 36, 0.15) ! important;
+     border-left: 1px solid rgba(0, 0, 0, 0.1) ! important;
+     border-right: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-search table td, tr:hover {
+     background-color: rgba(36, 36, 36, 0.15) ! important;
+     border: 1px solid rgba(0, 0, 0, 0.1) ! important;
+}
+
+#page-p-news .news h5 a:hover {
+     background: none repeat scroll 0px 0px rgba(17, 17, 17, 0.5) ! important;
+     color: #FFCC00;
+     width: 97%;
+}
+
+#page-p-news .comment {
+     border-radius: 4px 4px 4px 4px;
+     padding: 12px;
+}
+
+#page-p-news .well {
+     background-color: rgba(0, 0, 0, 0.2) ! important;
+     border-radius: 4px 4px 4px 4px;
+}
+
+#page-p-news .cmt_head, .cmt_text {
+     background-color: transparent ! important;
+     border-radius: 4px 4px 4px 4px;
+}
+
+#page-p-staff .djinfo {
+     -moz-border-bottom-colors: none ! important;
+     -moz-border-left-colors: none ! important;
+     -moz-border-right-colors: none ! important;
+     -moz-border-top-colors: none ! important;
+     background: linear-gradient(to bottom, rgba(36, 36, 36, 0.65) 0%, rgba(36, 36, 36, 0.3) 50%, rgba(36, 36, 36, 0.3) 100%) repeat scroll 0% 0% 
+
+transparent ! important;
+     border-color: #333333 #2C2C2C #2C2C2C ! important;
+     border-image: none ! important;
+     border-radius: 4px 4px 4px 4px;
+     border-style: solid ! important;
+     border-width: 0px ! important;
+     bottom: 2em;
+     color: #FFFFFF ! important;
+     float: left;
+     margin-bottom: 0px;
+     margin-left: 2.4em;
+     margin-right: 0px;
+     margin-top: 3.04em ! important;
+     padding: 4px;
+     position: relative;
+}
+
+pre {
+     background-color: rgba(36, 36, 36, 0.45) ! important;
+     border-radius: 3px 3px 3px 3px;
+     border: 1px solid rgba(0, 0, 0, 0.15);
+     display: block;
+     font-size: 12px;
+     line-height: 18px;
+     margin: 0px 0px 18px;
+     padding: 8.5px;
+     white-space: pre-wrap;
+     word-wrap: break-word;
+}
+
+#page-p-favorites h3, h4 {
+     color: #FFFFFF;
+}
+
+#page-p-home .span2.block-inline.listeners {
+     color: #FFFFFF ! important;
+     left: 1.5em;
+     position: relative;
+}
+
+#page-p-home .span4.block-inline {
+     color: #FFFFFF ! important;
+     left: 9.7em;
+     position: relative;
+}

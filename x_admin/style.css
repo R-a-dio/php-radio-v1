@@ -1,0 +1,37 @@
+table{
+border: 1px solid #999;
+border-right:0;
+border-bottom:0;
+}
+td, th{
+border-bottom: 1px solid #ccc;
+border-right:1px solid #eee;
+padding: .2em .5em;
+}
+form{
+margin:0;
+padding:0;
+}
+#jp_container_1 {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #222222;
+}
+#jp_container_1 .progress {
+	margin-bottom: 0;
+}
+.edwardian-table {
+	width: auto;
+}
+#topnav a {
+	padding: 0 .4em;
+	border-right: 1px solid #ccc;
+}
+h3:first-child+h4 {
+	display: none;
+}
+
+input, textarea, select, .uneditable-input { height: inherit; line-height: inherit; }
+
+body { padding: 8px !important; }

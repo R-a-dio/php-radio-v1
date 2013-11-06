@@ -1,0 +1,20 @@
+At Saturday 15th Dec, change the following parts of your config:
+
+<relay>
+	<server>stream0.r-a-d.io</server>
+	<port>8000</port>
+</relay>
+
+If you dont, your relay will stop working, or will start relaying another relay instead of the master server.
+
+Side-effect of this: your relay will now get triple or more the usual traffic.
+A bonus of having more relays means that the more relays there are, the less traffic you get.
+
+However, i have seeded this so that the loadbalancer favours the two most stable servers above others:
+         current / database      random jitter       database priority
+ratio = (listeners / limit) + (1/(15000 to 20000) - (priority / 1000)
+
+
+Location-based loadbalancing is on my TODO list.
+
+- Hiroto

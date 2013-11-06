@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>How to tag MP3 files</title>
+		<style>img{border:2px solid #fff}</style>
+	</head>
+	<body>
+		<img src="i1.png" /> <br>
+		<img src="i2.png" /> </br>
+		<img src="i3.png" /> </br>
+		<img src="i4.png" /> </br>
+		<img src="i5.png" /> </br>
+		<script>
+
+var v = [0,0,0,0,0];
+var i = document . getElementsByTagName   ( 'img'  ) ;
+function spaz  ( )
+  {
+     for   (var j = 0 ; j < i . length ; j ++  )
+       {
+           v  [ j ]  +=  Math . random  ( )   *12 - 16;;
+        while  ( v [  j] >
+				360   ) v [ j ] 
+	-= 360;
+          i  [ j ] . style .
+                     borderColor 
+      =   'hsl(' +  v [ j ] +
+                 ',100%,50%)' ;
+       }
+     setTimeout  ( 'spaz();' ,
+                                  10  ) ;
+  }
+spaz();
+</script>
+	</body>
+</html>

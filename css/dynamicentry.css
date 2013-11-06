@@ -1,0 +1,336 @@
+html {
+     background-attachment: fixed;
+     background-clip: border-box;
+     background-color: #440088;
+     background-image: url("/css/dynamicFlan.jpg");
+     background-origin: padding-box;
+     background-position: center top;
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+     color: #FFFFFF;
+}
+
+#dj {
+     color: #FFFFFF;
+}
+
+* {
+     background: none repeat scroll 0px 0px transparent;
+     color: #FFFFFF;
+}
+
+.page {
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(4,4,4,0.3) 27%, rgba(7,7,7,0.7) 47%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(27%,rgba(4,4,4,0.3)), color-stop(47%,rgba(7,7,7,0.7)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(4,4,4,0.3) 27%,rgba(7,7,7,0.7) 47%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(4,4,4,0.3) 27%,rgba(7,7,7,0.7) 47%,rgba(14,14,14,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(4,4,4,0.3) 27%,rgba(7,7,7,0.7) 47%,rgba(14,14,14,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(4,4,4,0.3) 27%,rgba(7,7,7,0.7) 47%,rgba(14,14,14,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+     border-radius: 0px 0px 153px 12px;
+     box-shadow: 0px 0px 13px 10px rgba(0, 0, 0, 0.6);
+     color: #FFFFFF;
+     margin: -1em auto 0px;
+     padding: 1em 2em 5em;
+}
+
+#page-p-home table td {
+     border-top: medium none;
+     padding: 4px;
+     text-align: center;
+}
+
+ul.replace-song li {
+     border-bottom: 2px solid rgba(15, 0, 0, 0.1);
+}
+
+ul.replace-song li:last-child {
+     border-bottom: 0px none;
+}
+
+.bordered-table {
+     border: 2px solid rgba(15, 0, 0, 0.1) ! important;
+}
+
+table td {
+     border: 0px solid rgba(15, 0, 0, 0.3) ! important;
+}
+
+#page-p-submit table td {
+     border: 2px solid rgba(15, 0, 0, 0.3) ! important;
+}
+
+#page-p-stats table td {
+     border-bottom: 2px solid rgba(15, 0, 0, 0.3) ! important;
+     border-top: 2px solid rgba(15, 0, 0, 0.3) ! important;
+}
+
+.bordered-table th + th, .bordered-table td + td, .bordered-table th + td {
+     border-left: 2px solid rgba(15, 0, 0, 0.1) ! important;
+}
+
+#page-p-home table tbody th {
+     display: none ! important;
+     visibility: hidden ! important;
+}
+
+#page-p-home #last-played-container {
+     margin-top: 2em;
+}
+
+table tbody th {
+     border-top: 0px solid #DDDDDD;
+}
+
+#page-p-home .span8 {
+     width: 98%;
+}
+
+#queue-container {
+     display: none ! important;
+     visibility: hidden ! important;
+}
+
+body {
+     background: none repeat scroll 0% 0% transparent;
+}
+
+#thread {
+     background: none repeat scroll 0% 0% rgba(15, 0, 0, 0.2) ! important;
+     border-bottom: 3px solid rgba(15, 0, 0, 0.1) ! important;
+     border-top: 3px solid rgba(15, 0, 0, 0.1) ! important;
+     color: #FFFFFF ! important;
+     height: 19px;
+     margin-bottom: 0.5em;
+     margin-top: 1.5em;
+     display: none;
+}
+
+.thread a {
+     text-shadow: 0px 0px 3px #FF3030;
+}
+
+.seperator .seperator {
+     border-top: 0px solid #555555;
+     display: none;
+}
+
+.news * {
+     background: none repeat scroll 0px 0px transparent ! important;
+}
+
+.news .border {
+     background: none repeat scroll 0% 0% rgba(15, 0, 0, 0.2) ! important;
+     border: 3px solid rgba(15, 0, 0, 0.1) ! important;
+     color: #FFFFFF;
+     margin-bottom: -2em;
+}
+
+.news h5 {
+     background: none repeat scroll 0% 0% transparent ! important;
+     color: #FFFFFF;
+     letter-spacing: 0em;
+     margin-top: 1em;
+     text-shadow: 0px 0px 1px #FFFFFF ! important;
+}
+
+.news h5 a:hover {
+     background: none repeat scroll 0% 0% transparent ! important;
+     color: #FFFFFF;
+     letter-spacing: 0.11em;
+     overflow: hidden;
+     text-overflow: clip;
+     text-shadow: 0px 0px 7px #FFFFFF;
+}
+
+#page-p-news .news h5 {
+     background: none repeat scroll 0% 0% rgba(15, 0, 0, 0.2) ! important;
+     border-bottom: 3px solid rgba(15, 0, 0, 0.1) ! important;
+     border-radius: 5px 5px 5px 5px;
+     border-top: 3px solid rgba(15, 0, 0, 0.1) ! important;
+     height: 25px ! important;
+}
+
+#page-p-news .news h5 a:hover {
+     background: none repeat scroll 0% 0% rgba(66, 0, 33, 0.3) ! important;
+     border-radius: 5px 5px 5px 5px;
+     width: 97%;
+}
+
+.zebra-striped tbody tr:nth-child(2n+1) td, .zebra-striped tbody tr:nth-child(2n+1) th {
+     background: none repeat scroll 0% 0% rgba(15, 0, 0, 0.25) ! important;
+     border-top: 1px solid rgba(15, 0, 0, 0.1) ! important;
+     color: #FFFFFF ! important;
+}
+
+#page-p-home .zebra-striped tbody tr:nth-child(2n+1) td, .zebra-striped tbody tr:nth-child(2n+1) th {
+     background: none repeat scroll 0% 0% rgba(15, 0, 0, 0.2) ! important;
+     border-top: 3px solid rgba(15, 0, 0, 0.1) ! important;
+     color: #FFFFFF ! important;
+}
+
+.zebra-striped tbody tr:nth-child(2n) td, .zebra-striped tbody tr:nth-child(2n) th {
+     background: none repeat scroll 0% 0% rgba(15, 0, 0, 0.2) ! important;
+     border-top: 1px solid rgba(15, 0, 0, 0.1) ! important;
+     color: #FFFFFF ! important;
+}
+
+#page-p-home .zebra-striped tbody tr:nth-child(2n) td, .zebra-striped tbody tr:nth-child(2n) th {
+     background: none repeat scroll 0% 0% rgba(15, 0, 0, 0.2) ! important;
+     border-top: 3px solid rgba(15, 0, 0, 0.1) ! important;
+     color: #FFFFFF ! important;
+}
+
+.zebra-striped tbody tr:hover td, .zebra-striped tbody tr:hover th {
+     background: none repeat scroll 0% 0% transparent ! important;
+     box-shadow: none ! important;
+}
+
+#page-p-home .zebra-striped tbody tr:hover td, .zebra-striped tbody tr:hover th {
+     background: none repeat scroll 0% 0% transparent ! important;
+     box-shadow: none ! important;
+}
+
+.djmedia {
+     border-radius: 4px 4px 4px 4px;
+     border-width: 0px;
+     text-align: center;
+     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+.media-grid a, .media-grid li > span {
+     border-radius: 4px 4px 4px 4px;
+     border: 0px solid #DDDDDD;
+     margin: 0px 0px 18px 20px;
+     padding: 4px;
+}
+
+.media-grid a:hover, .media-grid li > span:hover {
+     border-radius: 4px 4px 4px 4px;
+     border: 0px solid #DDDDDD;
+     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.7) inset;
+}
+
+#streamconnect #expand-panel {
+     color: #FFFFFF;
+}
+
+#streamconnect {
+     margin-left: 3em;
+     margin-top: 2.5em;
+}
+
+#streamconnect-panel {
+	background: -moz-linear-gradient(top,  rgba(14,14,14,0.8) 0%, rgba(14,14,14,0.7) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(14,14,14,0.8)), color-stop(100%,rgba(14,14,14,0.7))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(14,14,14,0.8) 0%,rgba(14,14,14,0.7) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(14,14,14,0.8) 0%,rgba(14,14,14,0.7) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(14,14,14,0.8) 0%,rgba(14,14,14,0.7) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(14,14,14,0.8) 0%,rgba(14,14,14,0.7) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0e0e0e', endColorstr='#b30e0e0e',GradientType=0 ); /* IE6-9 */
+     border-radius: 0px 50px 0px 50px;
+     border: 1px solid #000000;
+     display: none;
+     float: left;
+     margin-bottom: -100%;
+     opacity: 0;
+     padding: 10px;
+     position: relative;
+     width: 528px;
+     z-index: 5;
+}
+
+.progress {
+     background: none repeat scroll 0px 0px #333333 ! important;
+     box-shadow: 0px 0px 2px 1px #000000;
+}
+
+.progress .bar {
+     background: none repeat scroll 0px 0px #8C1717 ! important;
+}
+
+#progress .progress, #progress .bar {
+     border-radius: 3px 3px 3px 3px;
+}
+
+#nowplaying {
+     border-top: medium none;
+}
+
+.btn.info, .alert-message.info {
+     -moz-border-bottom-colors: none;
+     -moz-border-image: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.06);
+     border-top: medium none;
+     box-shadow: 0px 0px 10px 1px #000000;
+     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+}
+
+#last-played-container {
+     margin-top: 1em;
+}
+
+#page-p-news .comment {
+     background-color: rgba(10, 0, 0, 0.3) ! important;
+     border-radius: 20px 20px 5px 5px;
+     padding: 12px;
+}
+
+#page-p-news .cmt_head {
+     background: none repeat scroll 0% 0% transparent ! important;
+}
+
+#page-p-news .cmt_text {
+     background: none repeat scroll 0% 0% transparent ! important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+     color: #FFFFFF;
+}
+
+pre {
+     background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.45) ! important;
+     border: medium none;
+}
+
+div#submit-form-main {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 20%, rgba(0,0,0,0.45) 80%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(20%,rgba(0,0,0,0.45)), color-stop(80%,rgba(0,0,0,0.45)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 20%,rgba(0,0,0,0.45) 80%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 20%,rgba(0,0,0,0.45) 80%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 20%,rgba(0,0,0,0.45) 80%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 20%,rgba(0,0,0,0.45) 80%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+div#submit-form-main hr {
+     border-bottom: 3px solid rgba(15, 0, 0, 0.1) ! important;
+}
+
+label {
+     color: #FFFFFF;
+}
+
+.djinfo .djname {
+     color: #FFFFFF;
+}
+
+.submit-table .mainhead {
+     text-align: center;
+}
+
+table.submit-table th, table.submit-table td {
+     text-align: left;
+}
+
+.well {
+     background: none repeat scroll 0% 0% rgba(15, 0, 0, 0.3) ! important;
+     border-radius: 10px 10px 10px 10px;
+}

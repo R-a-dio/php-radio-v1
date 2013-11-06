@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>we don't like your kind 'round here</title>
+	<style>
+html {
+	background: -moz-linear-gradient(top,#9cf,#c9f);
+	background: -webkit-gradient(linear,left top,left bottom,from(#9cf),to(#c9f));
+}
+body,html {
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+#sun {
+	height: 120px;
+	position: absolute;
+}
+#pissoff {
+	text-align: center;
+	margin-top: 1em;
+	font-size: 3em;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #609;
+}
+#pissoff span {
+	color: #906;
+}
+</style>
+</head>
+<body>
+<img src="/res/img/smb3sun.png"id="sun" />
+<div id="pissoff">REDDIT<br /><span>SUCKS</span></div>
+<script>
+var sun = document.getElementById('sun');
+var state = 0;
+var eight = 0;
+var kicks = 1;
+function mover() {
+	eight += 0.1;
+	if (eight > Math.PI*4) {
+		eight = 0;
+		kicks++;
+	}
+	if (kicks > 1 && eight > Math.PI * 3) {
+		if (state == 0) {
+			state = 2;
+			setTimeout('transition()',500);
+			return;
+		}
+		else if (state == 2) {
+			state = 0;
+			setTimeout('transition()',500);
+			return;
+		}
+	}
+	var x = Math.cos(eight/2)*100+100;
+	var y = Math.sin(eight)*50+30;
+	if (state == 0) {
+		sun.style.left = x+'px';
+		sun.style.top = y+'px';
+	}
+	if (state == 2) {
+		sun.style.right = x+'px';
+		sun.style.top = y+'px';
+	}
+	setTimeout('mover()', 10);
+}
+mover();
+function transition() {
+	slideOver();
+	sun.style.left = 'auto';
+	sun.style.right = 'auto';
+	dir = !dir;
+}
+var dir = false;
+var slideN = 0;
+function slideOver() {
+	slideN += 0.01;
+	if (slideN > 1.03) {
+		kicks = 0;
+		slideN = 0;
+		if (state == 2) sun.style.left = 'auto';
+		if (state == 0) sun.style.right = 'auto';
+		mover();
+		return;
+	}
+	if (dir)
+	sun.style.left = ((Math.cos(Math.PI+Math.PI*slideN)+1.2)*35)+'%';
+	else
+	sun.style.right = ((Math.cos(Math.PI+Math.PI*slideN)+1.2)*35)+'%';
+	sun.style.top = ((Math.sin(Math.PI*slideN)+0.5)*45)+'%';
+	setTimeout('slideOver()',10);
+}
+</script>
+</body>
+</html>

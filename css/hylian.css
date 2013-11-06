@@ -1,0 +1,58 @@
+html {
+	background: url('hylian-2.jpg') fixed top right no-repeat;
+	background-size: cover;
+	min-height: 100%;
+}
+body {
+	background: none;
+}
+.page {
+	background: rgba(255,255,255,0.9);
+	padding: 1em 2em;
+	border-radius: 0 0 12px 12px;
+	margin: -1em auto 0 auto;
+	box-shadow: 0 0 32px rgba(160,204,255,0.9);
+	margin: -1em 0 0 5em;
+}
+.fill.btn.info {
+	color: #089;
+	background: linear-gradient(top, hsl(200,100%,78%), hsl(196,100%,83%) 30%, hsla(170,100%,75%,0.1));
+	background: -o-linear-gradient(top, hsl(200,100%,78%), hsl(196,100%,83%) 30%, hsla(170,100%,75%,0.1));
+	background: -moz-linear-gradient(top, hsl(200,100%,78%), hsl(196,100%,83%) 30%, hsla(170,100%,75%,0.1));
+	background: -webkit-linear-gradient(top, hsl(200,100%,78%), hsl(196,100%,83%) 30%, hsla(170,100%,75%,0.1));
+	border-bottom: 1px solid #dde7ee;
+	border-top: 1px solid #dde7ee;
+	border-width: 1px 0;
+	text-shadow: 0 1px 0 #9df;
+	box-shadow: 0 -2px 6px rgba(204,192,255,0.8);
+	border-radius: 9001px;
+}
+.fill.btn.info:hover {
+	color: #089;
+	background: #8ff;
+}
+.news,
+.news h5,
+.news .span-one-third
+{
+	background: none !important;
+}
+.news .border {
+	border: none;
+	background: #f7f7f7;
+	border-radius: 0 0 12px 12px;
+	box-shadow: 0 1px 8px rgba(204,192,255,0.9);
+}
+.news h5 a {
+	color: #068 !important;
+	border-radius: 12px 12px 0 0;
+	border-bottom: 1px solid #ccc;
+	text-shadow: 0 1px 0 #fff;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+.news h5 a:hover {
+	color: #000;
+	/*letter-spacing: .2em;*/
+	background: none !important;
+}

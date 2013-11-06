@@ -1,0 +1,144 @@
+# upstreams!
+upstream beta { server 127.0.0.1:5672; }
+upstream dev { server 127.0.0.1:5673; }
+upstream icecast { server 127.0.0.1:8000; }
+upstream buildbot { server 127.0.0.1:8010; }
+
+
+# Beta Server.
+server {
+	listen 5672;
+	root /radio/www/r-a-d.io/beta/public;
+	index index.php index.html;
+
+	error_log /radio/www/logs/r-a-d.io/beta/error.log;
+	access_log /radio/www/logs/r-a-d.io/beta/access.log;
+
+	location / { try_files $uri $uri/ /index.php?$request_uri; }
+
+	# php5-fpm fastcgi pass.
+	location ~ \.php$ {
+		fastcgi_split_path_info ^((?U).+\.php)(/?.+)$;
+		fastcgi_pass unix:/var/run/php5-fpm.sock;
+		fastcgi_intercept_errors off;
+		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+		include fastcgi_params;
+	}
+
+}
+
+
+# Dev Server
+server {
+	listen 5673;
+	root /radio/www/r-a-d.io/dev/public;
+	index index.php index.html;
+	error_log /radio/www/logs/r-a-d.io/dev/error.log info;
+	access_log /radio/www/logs/r-a-d.io/dev/access.log;
+
+	location / {
+		try_files $uri $uri/ /index.php?$uri;
+	}
+
+	# php5-fpm fastcgi pass.
+	location ~ \.php$ {
+		fastcgi_split_path_info ^((?U).+\.php)(/?.+)$;
+		fastcgi_pass unix:/var/run/php5-fpm.sock;
+		fastcgi_intercept_errors off;
+		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+		include fastcgi_params;
+	}
+
+}
+
+# catch-www server block.
+server {
+	listen 80;
+	listen 443 ssl;
+	listen 1130;
+
+	ssl_certificate /radio/www/keys/r-a-d.io/r-a-d.io.crt;
+	ssl_certificate_key /radio/www/keys/r-a-d.io/r-a-d.io.key;
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+	ssl_prefer_server_ciphers on;
+	ssl_ciphers EECDH+HIGH+AES:EDH+HIGH+AES:!PSK:!SRP:!aNULL;
+	ssl_session_cache shared:SSL:10m;
+	add_header Strict-Transport-Security max-age=43200;
+
+	server_name www.r-a-d.io;
+
+	return 301 $scheme://r-a-d.io$request_uri;
+}
+
+
+# Primary routing server.
+server {
+	listen 80;
+	listen 443 ssl;
+	listen 1130;
+
+	# SSL Details - Defaults are way too insecure.
+	# OpenSSL 1.0.1e required (compile manually)
+	ssl_certificate /radio/www/keys/r-a-d.io/r-a-d.io.crt;
+	ssl_certificate_key /radio/www/keys/r-a-d.io/r-a-d.io.key;
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+	ssl_prefer_server_ciphers on;
+	ssl_ciphers EECDH+HIGH+AES:EDH+HIGH+AES:!PSK:!SRP:!aNULL;
+	ssl_session_cache shared:SSL:10m;
+	add_header Strict-Transport-Security max-age=43200;
+
+	# y/n: stream.r-a-d.io? I'm thinking /stream/ will replace it.
+	server_name r-a-d.io;
+
+
+
+	# trailing slashes are (annoyingly) required.
+	location /dev/ { proxy_pass http://dev/; }
+	location /beta/ { proxy_pass http://beta/; }
+	location /stream/ { proxy_pass http://icecast/; }
+	location /buildbot/ { proxy_pass http://buildbot/; }
+
+	error_page 404 = /e404.html;
+
+	root /radio/www/r-a-d.io/live;
+	index index.php index.html;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+
+	location ~ ^/(stream|main|test|hiroto).mp3$ {
+                # todo: think of a better way than this ^
+                proxy_pass http://icecast;
+        }
+
+        location /res/music {
+                alias /radio/www/music;
+        }
+
+        location /ed/ {
+                autoindex on;
+                alias /radio/www/ed_files/;
+        }
+
+        # php5-fpm fastcgi pass.
+        location ~ \.php$ {
+                fastcgi_split_path_info ^((?U).+\.php)(/?.+)$;
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+                fastcgi_intercept_errors off;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                include fastcgi_params;
+        }
+
+        # Requests Handler.
+        location ~ \.py$ {
+                fastcgi_pass unix:/tmp/fastcgi.pywessie.sock;
+                fastcgi_intercept_errors on;
+                fastcgi_index index.py;
+                include fastcgi_params;
+        }
+
+
+}
+

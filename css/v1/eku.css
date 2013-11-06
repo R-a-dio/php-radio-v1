@@ -1,0 +1,103 @@
+html {
+	background: #306 url('eku-wp.jpg') fixed no-repeat;
+	background-size: cover;
+}
+body {
+	background: none;
+}
+.page {
+	margin-top: 1em;
+	padding: 1em 2em;
+	border-radius: 8px;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 16px rgba(0,0,0,0.4);
+}
+#last-played {
+	/*width: 200%;*/
+}
+x#queue {
+	display: none;
+}
+.fill {
+background: rgb(252,234,187) !important;
+background: -moz-linear-gradient(top, rgba(234,187,252,1) 0%, rgba(205,77,252,1) 50%, rgba(181,0,248,1) 51%, rgba(223,147,251,1) 100%) !important;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(234,187,252,1)), color-stop(50%,rgba(205,77,252,1)), color-stop(51%,rgba(181,0,248,1)), color-stop(100%,rgba(223,147,251,1))) !important;
+background: -webkit-linear-gradient(top, rgba(234,187,252,1) 0%,rgba(205,77,252,1) 50%,rgba(181,0,248,1) 51%,rgba(223,147,251,1) 100%) !important;
+background: -o-linear-gradient(top, rgba(234,187,252,1) 0%,rgba(205,77,252,1) 50%,rgba(181,0,248,1) 51%,rgba(223,147,251,1) 100%) !important;
+background: -ms-linear-gradient(top, rgba(234,187,252,1) 0%,rgba(205,77,252,1) 50%,rgba(181,0,248,1) 51%,rgba(223,147,251,1) 100%) !important;
+background: linear-gradient(top, rgba(234,187,252,1) 0%,rgba(205,77,252,1) 50%,rgba(181,0,248,1) 51%,rgba(223,147,251,1) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ) !important;
+color: #306 !important;
+font-weight: bold;
+text-shadow: 0 1px 3px #ff0 !important;
+}
+.progress .bar {
+background: rgb(255,183,107) !important;
+background: -moz-linear-gradient(top, rgba(183,107,255,1) 0%, rgba(167,61,255,1) 50%, rgba(124,0,255,1) 51%, rgba(127,4,255,1) 100%) !important;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(183,107,255,1)), color-stop(50%,rgba(167,61,255,1)), color-stop(51%,rgba(124,0,255,1)), color-stop(100%,rgba(127,4,255,1))) !important;
+background: -webkit-linear-gradient(top, rgba(183,107,255,1) 0%,rgba(167,61,255,1) 50%,rgba(124,0,255,1) 51%,rgba(127,4,255,1) 100%) !important;
+background: -o-linear-gradient(top, rgba(183,107,255,1) 0%,rgba(167,61,255,1) 50%,rgba(124,0,255,1) 51%,rgba(127,4,255,1) 100%) !important;
+background: -ms-linear-gradient(top, rgba(183,107,255,1) 0%,rgba(167,61,255,1) 50%,rgba(124,0,255,1) 51%,rgba(127,4,255,1) 100%) !important;
+background: linear-gradient(top, rgba(183,107,255,1) 0%,rgba(167,61,255,1) 50%,rgba(124,0,255,1) 51%,rgba(127,4,255,1) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ) !important;
+}
+.news h5 {
+background: rgb(239,197,202);
+background: -moz-linear-gradient(top, rgba(197,202,239,1) 0%, rgba(75,90,210,1) 50%, rgba(39,55,186,1) 51%, rgba(142,153,241,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(197,202,239,1)), color-stop(50%,rgba(75,90,210,1)), color-stop(51%,rgba(39,55,186,1)), color-stop(100%,rgba(142,153,241,1)));
+background: -webkit-linear-gradient(top, rgba(197,202,239,1) 0%,rgba(75,90,210,1) 50%,rgba(39,55,186,1) 51%,rgba(142,153,241,1) 100%);
+background: -o-linear-gradient(top, rgba(197,202,239,1) 0%,rgba(75,90,210,1) 50%,rgba(39,55,186,1) 51%,rgba(142,153,241,1) 100%);
+background: -ms-linear-gradient(top, rgba(197,202,239,1) 0%,rgba(75,90,210,1) 50%,rgba(39,55,186,1) 51%,rgba(142,153,241,1) 100%);
+background: linear-gradient(top, rgba(197,202,239,1) 0%,rgba(75,90,210,1) 50%,rgba(39,55,186,1) 51%,rgba(142,153,241,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=0 );
+box-shadow: 0 0 8px rgba(255,255,255,0.4);
+border-bottom: 1px solid #a66;
+}
+.news h5,
+.news h5 a {
+	border-radius: 16px 16px 0 0;
+}
+.news h5 a:hover {
+	box-shadow: 0 -3px 6px #f90;
+}
+.zebra-striped td,
+.zebra-striped th {
+	border-top: 1px solid rgba(0,0,0,0.2) !important;
+}
+.span-one-third {
+	background: none !important;
+}
+.border {
+	background: #fff;
+	z-index: 9001;
+}
+.seperator {
+	display: none;
+}
+#thread {
+	background: rgba(255,255,255,0.5);
+	padding: .5em 0;
+	margin: 2em 0;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-width: 1px 0;
+}
+.djmedia {
+	background: rgba(255,255,255,0.7);
+	border-radius: 6px !important;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1) !important;
+	border: none !important;
+}
+#dj,
+#nowplaying h2 {
+	font-family: 'Dosis', sans-serif;
+}
+#dj {
+	margin-top: -.3em;
+	padding: .2em 0;
+}
+#last-played thead {
+	display: none;
+}
+.djimg {
+	border-radius: 4px;
+}

@@ -1,0 +1,102 @@
+html, body {
+	background: #000;
+}
+* {
+	color: #fff !important;
+}
+.page {
+	position: relative;
+}
+g.djmedia,
+#introcontainer img
+{
+	display: none;
+}
+.djmedia {
+	position: absolute;
+	right: 0;
+	top: 1em;
+}
+#logo-image-div {
+	background: url('/res/img/skyemodo.png');
+	width: 484px;
+	height: 180px;
+	float: left;
+}
+#main-streamdata {
+	top: -5em;
+	background: rgba(0,0,0,0.7);
+	width: 484px !important;
+}
+#nowplaying {
+	width: 484px !important;
+}
+.progress {
+	width: 484px !important;
+	background: #333 !important;
+}
+.progress .bar {
+	background: #cf0 !important;
+}
+#introcontainer {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	right: 180px;;
+	top: 12%;
+	width: 18em;
+}
+.fill.btn.info {
+	background: #555;
+}
+#streamconnect-panel {
+	display: block;
+	position: absolute;
+	opacity: 1;
+	right: 189px;
+	width: 17em;
+	height: 3em;
+	top: 4%;
+	background: none;
+	border: none;
+}
+#introcontainer,
+#streamconnect,
+#streamconnect * {
+	z-index: 9001;
+}
+#panel-links {
+	border: none;
+}
+#panel-links h4 {
+	display: none;
+}
+#expand-panel {
+	display: none !important;
+}
+#streamconnect-panel p {
+	color: rgba(0,0,0,0) !important;
+}
+#last-played *, #queue * {
+	color: #aaa !important;
+	border-color: #333;
+}
+#last-played-container,
+#queue-container {
+	margin-top: -2em;
+}
+.seperator,
+.seperator * {
+	border-color: #222 !important;
+}
+.span-one-third,
+.border,
+.news {
+	background: #000;
+}
+.news .well,
+.news .well *,
+.comment,
+.comment * {
+	color: #444 !important;
+}
